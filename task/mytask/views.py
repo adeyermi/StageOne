@@ -13,8 +13,8 @@ def get_info(request):
         utc_time = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
 
         # Get the GitHub URL of the current file and full source code
-        current_file_url = f'https://github.com/adeyermi/zuri-task-/tree/main/Stage%20One/task/mytask{os.path.basename(__file__)}'
-        source_code_url = 'https://github.com/adeyermi/zuri-task-/tree/main/Stage%20One/task'
+        current_file_url = f'https://github.com/adeyermi/StageOne/blob/main/task/mytask/views.py' #{os.path.basename(__file__)}'
+        source_code_url = 'https://github.com/adeyermi/StageOne/tree/main/task'
 
         response_data = {
             'slack_name': slack_name,
