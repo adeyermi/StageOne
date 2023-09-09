@@ -8,7 +8,7 @@ def get_info(request):
     slack_name = request.GET.get('slack_name')
     track = request.GET.get('track')
     
-    if slack_name == 'Adeyermi' and track == 'Backend':
+    if slack_name == 'Adeyermi' and track == 'backend':
         current_day = datetime.now().strftime('%A')
         utc_time = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
 
